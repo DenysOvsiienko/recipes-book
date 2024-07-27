@@ -98,10 +98,10 @@ export const markupHeroRecipesSliders = data => {
     <div class="hero-random-recipe-mark">
   <img
     class="hero-random-recipe-mark-img"
-    src="./img/hero/recipe-mark@1x.png"
+    src="../img/hero/recipe-mark@1x.png"
     srcset="
-      ./img/hero/recipe-mark@1x.png 1x,
-      ./img/hero/recipe-mark@2x.png 2x
+      ../img/hero/recipe-mark@1x.png 1x,
+      ../img/hero/recipe-mark@2x.png 2x
     "
   />
   <p class="hero-random-recipe-mark-text">Hot Recipes</p>
@@ -113,7 +113,7 @@ export const markupHeroRecipesSliders = data => {
     </p>
     <div class="hero-random-recipe-info-wrapper">
       <div class="hero-random-recipe-info">
-        <div class="hero-random-recipe-cooking-time-icon">
+        <div class="recipe-cooking-time-icon">
           <svg width="24" height="24">
             <use href="./img/icons.svg#icon-timer"></use>
           </svg>
@@ -123,7 +123,7 @@ export const markupHeroRecipesSliders = data => {
         </p>
       </div>
       <div class="hero-random-recipe-info">
-        <div class="hero-random-recipe-meal-type-icon">
+        <div class="recipe-meal-type-icon">
           <svg width="24" height="24">
             <use href="./img/icons.svg#icon-forkKnife"></use>
           </svg>

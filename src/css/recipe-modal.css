@@ -129,6 +129,11 @@
   margin-bottom: 12px;
 }
 
+.recipe-cooking-time-icon svg,
+.recipe-meal-type-icon svg {
+  fill: #000000;
+}
+
 .recipe-modal-instructions-title {
   font-weight: 600;
   margin-bottom: 6px;
