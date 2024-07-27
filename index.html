@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Book</title>
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Modern Normalize link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <!-- Custom styles -->
+    
+    <script type="module" crossorigin src="/recipes-book/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/recipes-book/assets/vendor-9805b4a6.js">
+    <link rel="stylesheet" href="/recipes-book/assets/vendor-2715ca0a.css">
+    <link rel="stylesheet" href="/recipes-book/assets/index-6d4ed94b.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo-link" href="./index.html"
+          >Recipes <span class="header-logo-link-span">Book</span></a
+        >
+        <nav class="header-page-navigation">
+          <ul class="header-page-navigation-list">
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#recipes">Recipes</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">Blog</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">Contact</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-media-list">
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="10" height="20">
+                <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="23" height="18">
+                <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="23" height="22">
+                <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Open mobile menu button"
+        >
+          <svg class="mobile-menu-btn-icon" width="28" height="28">
+            <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container hero-container">
+          <h1 class="visually-hidden">Recipes Book</h1>
+
+          <!-- Recipes slider container -->
+          <div class="hero-recipes-swiper">
+            <div class="hero-recipes-swiper-wrapper">
+              <!-- Recipes Slides -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category-section">
+        <div class="container">
+          <h2 class="categories-title">Categories</h2>
+          <ul class="category-list">
+            <li class="category-list-item" data-mealtype="appetizer">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/appetizer@1x-dd7dd183.jpg"
+                srcset="/recipes-book/assets/appetizer@1x-dd7dd183.jpg 1x, /recipes-book/assets/appetizer@2x-9901987b.jpg 2x"
+                alt="Appetizer"
+                loading="lazy"
+              />
+              <p class="category-item-name">Appetizer</p>
+            </li>
+            <li class="category-list-item" data-mealtype="beverage">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/beverage@1x-ec031803.jpg"
+                srcset="/recipes-book/assets/beverage@1x-ec031803.jpg 1x, /recipes-book/assets/beverage@2x-bd2ab9e1.jpg 2x"
+                alt="Beverage"
+                loading="lazy"
+              />
+              <p class="category-item-name">Beverage</p>
+            </li>
+            <li class="category-list-item" data-mealtype="breakfast">
+              <img
+                class="category-img"
+                src="data:image/jpeg;base64,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"
+                srcset="data:image/jpeg;base64,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 1x, /recipes-book/assets/breakfast@2x-4225a9a9.jpg 2x"
+                alt="Breakfast"
+                loading="lazy"
+              />
+              <p class="category-item-name">Breakfast</p>
+            </li>
+            <li class="category-list-item" data-mealtype="dessert">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/dessert@1x-73ebe82f.jpg"
+                srcset="/recipes-book/assets/dessert@1x-73ebe82f.jpg 1x, /recipes-book/assets/dessert@2x-09102a93.jpg 2x"
+                alt="Dessert"
+                loading="lazy"
+              />
+              <p class="category-item-name">Dessert</p>
+            </li>
+            <li class="category-list-item" data-mealtype="dinner">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/dinner@1x-1ef1957c.jpg"
+                srcset="/recipes-book/assets/dinner@1x-1ef1957c.jpg 1x, /recipes-book/assets/dinner@2x-c560416a.jpg 2x"
+                alt="Dinner"
+                loading="lazy"
+              />
+              <p class="category-item-name">Dinner</p>
+            </li>
+            <li class="category-list-item" data-mealtype="lunch">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/lunch@1x-896ae577.jpg"
+                srcset="/recipes-book/assets/lunch@1x-896ae577.jpg 1x, /recipes-book/assets/lunch@2x-bfc4e3b9.jpg 2x"
+                alt="Lunch"
+                loading="lazy"
+              />
+              <p class="category-item-name">Lunch</p>
+            </li>
+            <li class="category-list-item" data-mealtype="snack">
+              <img
+                class="category-img"
+                src="/recipes-book/assets/snack@1x-713ccff5.jpg"
+                srcset="/recipes-book/assets/snack@1x-713ccff5.jpg 1x, /recipes-book/assets/snack@2x-f3b39fba.jpg 2x"
+                alt="Snack"
+                loading="lazy"
+              />
+              <p class="category-item-name">Snack</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recipes-search-section" id="recipes">
+        <div class="container recipes-search-container">
+          <h2 class="recipes-tile">Simple and tasty recipes</h2>
+          <p class="recipes-subtitle">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
+          <form class="recipes-search-form">
+            <input
+              class="recipes-search-input"
+              type="text"
+              name="recipesSearchInput"
+              placeholder="Search for recipe..."
+            />
+            <button class="recipes-search-btn" type="submit">Search</button>
+          </form>
+          <ul class="recipes-list"></ul>
+          <div class="loader visually-hidden"></div>
+          <button
+            class="recipes-list-load-more-btn visually-hidden"
+            type="button"
+          >
+            Load more...
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top-container">
+          <div class="footer-top-container-box">
+            <a class="footer-logo-link" href="./index.html"
+              >Recipes <span class="footer-logo-link-span">Book</span></a
+            >
+            <p class="footer-top-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <nav class="footer-page-navigation">
+            <ul class="footer-page-navigation-list">
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#recipes"
+                  >Recipes</a
+                >
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#">Blog</a>
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="header-page-navigation-link" href="#">Contact</a>
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom-container">
+          <p class="footer-bottom-text">© Lorem ipsum dolor.</p>
+          <ul class="footer-social-media-list">
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="10" height="20">
+                  <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="23" height="18">
+                  <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="23" height="22">
+                  <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="recipe-modal-backdrop is-closed">
+      <div class="recipe-modal">
+        <button class="recipe-modal-close-btn" type="button">
+          <svg class="recipe-modal-close-btn-icon" width="24" height="24">
+            <use href="/recipes-book/assets/icons-f123c2ca.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="recipe-modal-content"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>
