@@ -1,0 +1,119 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-top-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.footer-top-container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-link {
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.footer-logo-link-span {
+  color: var(--accent-color);
+}
+
+.footer-page-navigation-list {
+  display: flex;
+  gap: 48px;
+}
+
+.footer-page-navigation-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-page-navigation-link:hover,
+.footer-page-navigation-link:focus-visible,
+.footer-page-navigation-link:active {
+  color: var(--accent-color);
+}
+
+.footer-bottom-container {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-top: 1px solid #0000001a;
+  padding-top: 40px;
+}
+
+.footer-bottom-text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-size: 16px;
+  transform: translate(-50%, 25%);
+}
+
+.footer-social-media-list {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-media-link {
+  fill: var(--default-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--default-text-color);
+  border-radius: 8px;
+  padding: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-link:hover,
+.footer-social-media-link:focus-visible,
+.footer-social-media-link:active {
+  fill: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-top-container-box {
+    margin-bottom: 0;
+  }
+
+  .footer-page-navigation-list {
+    gap: 20px;
+  }
+
+  .footer-bottom-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%, 25%);
+  }
+
+  .footer-social-media-list {
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-page-navigation-list {
+    gap: 60px;
+  }
+}

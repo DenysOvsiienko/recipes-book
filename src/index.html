@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Book</title>
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Modern Normalize link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo-link" href="./index.html"
+          >Recipes <span class="header-logo-link-span">Book</span></a
+        >
+        <nav class="header-page-navigation">
+          <ul class="header-page-navigation-list">
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#recipes">Recipes</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">Blog</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">Contact</a>
+            </li>
+            <li class="header-page-navigation-list-item">
+              <a class="header-page-navigation-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-media-list">
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="10" height="20">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="23" height="18">
+                <use href="./img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-media-list-item">
+            <a class="header-social-media-link" href="#">
+              <svg width="23" height="22">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container hero-container">
+          <h1 class="visually-hidden">Recipes Book</h1>
+
+          <!-- Recipes slider container -->
+          <div class="hero-recipes-swiper">
+            <div class="hero-recipes-swiper-wrapper">
+              <!-- Recipes Slides -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category-section">
+        <div class="container">
+          <h2 class="categories-title">Categories</h2>
+          <ul class="category-list">
+            <li class="category-list-item" data-mealtype="appetizer">
+              <img
+                class="category-img"
+                src="./img/categories/appetizer@1x.jpg"
+                srcset="
+                  ./img/categories/appetizer@1x.jpg 1x,
+                  ./img/categories/appetizer@2x.jpg 2x
+                "
+                alt="Appetizer"
+                loading="lazy"
+              />
+              <p class="category-item-name">Appetizer</p>
+            </li>
+            <li class="category-list-item" data-mealtype="beverage">
+              <img
+                class="category-img"
+                src="./img/categories/beverage@1x.jpg"
+                srcset="
+                  ./img/categories/beverage@1x.jpg 1x,
+                  ./img/categories/beverage@2x.jpg 2x
+                "
+                alt="Beverage"
+                loading="lazy"
+              />
+              <p class="category-item-name">Beverage</p>
+            </li>
+            <li class="category-list-item" data-mealtype="breakfast">
+              <img
+                class="category-img"
+                src="./img/categories/breakfast@1x.jpg"
+                srcset="
+                  ./img/categories/breakfast@1x.jpg 1x,
+                  ./img/categories/breakfast@2x.jpg 2x
+                "
+                alt="Breakfast"
+                loading="lazy"
+              />
+              <p class="category-item-name">Breakfast</p>
+            </li>
+            <li class="category-list-item" data-mealtype="dessert">
+              <img
+                class="category-img"
+                src="./img/categories/dessert@1x.jpg"
+                srcset="
+                  ./img/categories/dessert@1x.jpg 1x,
+                  ./img/categories/dessert@2x.jpg 2x
+                "
+                alt="Dessert"
+                loading="lazy"
+              />
+              <p class="category-item-name">Dessert</p>
+            </li>
+            <li class="category-list-item" data-mealtype="dinner">
+              <img
+                class="category-img"
+                src="./img/categories/dinner@1x.jpg"
+                srcset="
+                  ./img/categories/dinner@1x.jpg 1x,
+                  ./img/categories/dinner@2x.jpg 2x
+                "
+                alt="Dinner"
+                loading="lazy"
+              />
+              <p class="category-item-name">Dinner</p>
+            </li>
+            <li class="category-list-item" data-mealtype="lunch">
+              <img
+                class="category-img"
+                src="./img/categories/lunch@1x.jpg"
+                srcset="
+                  ./img/categories/lunch@1x.jpg 1x,
+                  ./img/categories/lunch@2x.jpg 2x
+                "
+                alt="Lunch"
+                loading="lazy"
+              />
+              <p class="category-item-name">Lunch</p>
+            </li>
+            <li class="category-list-item" data-mealtype="snack">
+              <img
+                class="category-img"
+                src="./img/categories/snack@1x.jpg"
+                srcset="
+                  ./img/categories/snack@1x.jpg 1x,
+                  ./img/categories/snack@2x.jpg 2x
+                "
+                alt="Snack"
+                loading="lazy"
+              />
+              <p class="category-item-name">Snack</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recipes-search-section" id="recipes">
+        <div class="container recipes-search-container">
+          <h2 class="recipes-tile">Simple and tasty recipes</h2>
+          <p class="recipes-subtitle">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
+          <form class="recipes-search-form">
+            <input
+              class="recipes-search-input"
+              type="text"
+              name="recipesSearchInput"
+              placeholder="Search for recipe..."
+            />
+            <button class="recipes-search-btn" type="submit">Search</button>
+          </form>
+          <ul class="recipes-list"></ul>
+          <div class="loader visually-hidden"></div>
+          <button
+            class="recipes-list-load-more-btn visually-hidden"
+            type="button"
+          >
+            Load more...
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top-container">
+          <div class="footer-top-container-box">
+            <a class="footer-logo-link" href="./index.html"
+              >Recipes <span class="footer-logo-link-span">Book</span></a
+            >
+            <p class="footer-top-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <nav class="footer-page-navigation">
+            <ul class="footer-page-navigation-list">
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#recipes"
+                  >Recipes</a
+                >
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#">Blog</a>
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="header-page-navigation-link" href="#">Contact</a>
+              </li>
+              <li class="footer-page-navigation-list-item">
+                <a class="footer-page-navigation-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom-container">
+          <p class="footer-bottom-text">© Lorem ipsum dolor.</p>
+          <ul class="footer-social-media-list">
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="10" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="23" height="18">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list-item">
+              <a class="footer-social-media-link" href="#">
+                <svg width="23" height="22">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="recipe-modal-backdrop is-closed">
+      <div class="recipe-modal">
+        <button class="recipe-modal-close-btn" type="button">
+          <svg class="recipe-modal-close-btn-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="recipe-modal-content"></div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
