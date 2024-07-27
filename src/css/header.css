@@ -60,6 +60,26 @@
   border: 2px solid var(--accent-color);
 }
 
+.mobile-menu-btn {
+  position: relative;
+  stroke: #000;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.mobile-menu-btn-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobile-menu-btn :hover,
+.mobile-menu-btn :focus-visible,
+.mobile-menu-btn :active {
+  stroke: var(--accent-color);
+}
+
 @media only screen and (min-width: 768px) {
   .header-page-navigation-list {
     display: flex;
@@ -69,6 +89,10 @@
   .header-social-media-list {
     display: flex;
     gap: 20px;
+  }
+
+  .mobile-menu-btn {
+    display: none;
   }
 }
 
