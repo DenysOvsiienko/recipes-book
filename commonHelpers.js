@@ -65,10 +65,10 @@ import{a as I,i as l,S as P,A as O}from"./assets/vendor-9805b4a6.js";(function()
     <div class="hero-random-recipe-mark">
   <img
     class="hero-random-recipe-mark-img"
-    src="../img/hero/recipe-mark@1x.png"
+    src="./img/hero/recipe-mark@1x.png"
     srcset="
-      ../img/hero/recipe-mark@1x.png 1x,
-      ../img/hero/recipe-mark@2x.png 2x
+      ./img/hero/recipe-mark@1x.png 1x,
+      ./img/hero/recipe-mark@2x.png 2x
     "
   />
   <p class="hero-random-recipe-mark-text">Hot Recipes</p>
