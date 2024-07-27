@@ -118,13 +118,15 @@
 
 .recipe-info-wrapper {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 12px;
 }
 
 .recipe-meal-type,
 .recipe-cooking-time {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 6px;
 }
 .recipe-meal-type-text,
 .recipe-cooking-time-text {
